@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* This file controls how the TinyMCE editor is styled.  It’s generally considered good practice to style the editor so that users can get an idea of how their posts will look on the actual site.  @package Fraise */
+img { margin: 0; max-width: 100%; height: auto; }
+
+.alignleft { margin: 0 24px 24px 0; display: inline-block; float: left; }
+
+.alignright { margin: 0 0 24px 24px; display: inline-block; float: right; }
+
+.aligncenter { display: block; clear: both; margin-left: auto; margin-right: auto; }
+
+.wp-caption { margin-bottom: 24px; }
+.wp-caption img { width: 100%; }
+
+.wp-caption-text { font: normal 14px "Source Sans Pro", "Helvetica Neue", sans-serif; text-align: right; }
+
+.gallery { margin-bottom: 24px; clear: both; }
+
+.gallery-item { margin-bottom: 24px; display: inline-block; text-align: center; vertical-align: top; width: 100%; }
+.gallery-columns-1 .gallery-item { max-width: 100%; }
+.gallery-columns-2 .gallery-item { max-width: 50%; }
+.gallery-columns-3 .gallery-item { max-width: 33.33333%; }
+.gallery-columns-4 .gallery-item { max-width: 25%; }
+.gallery-columns-5 .gallery-item { max-width: 20%; }
+.gallery-columns-6 .gallery-item { max-width: 16.66667%; }
+.gallery-columns-7 .gallery-item { max-width: 14.28571%; }
+.gallery-columns-8 .gallery-item { max-width: 12.5%; }
+.gallery-columns-9 .gallery-item { max-width: 11.11111%; }
+
+.gallery-caption { text-align: center; }
+
+body#tinymce { background-color: #f9f9f9; color: #151515; font-family: "Source Sans Pro", "Helvetica Neue", sans-serif; font-size: 16px; line-height: 24px; text-rendering: optimizeLegibility; }
+
+pre, code, kbd, samp, tt { font-family: "Inconsolata", "Courier New", monospace, monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+blockquote { margin: 24px 0; padding-left: 24px; border-left: 2px solid #151515; }
+
+ol, ul { margin: 24px 0; padding: 0 0 0 24px; }
+ol ol, ol ul, ul ol, ul ul { margin: 0; }
+
+dt { font-weight: bold; }
+
+dd { margin: 0 0 12px; }
+
+p { margin: 0 0 24px 0; }
+
+pre { max-width: 100%; overflow: auto; word-wrap: break-word; }
+
+table { margin: 24px 0; border: 1px solid #6a6a68; border-collapse: collapse; max-width: 100%; }
+table th, table td { padding: 6px; border: 1px solid #6a6a68; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Source Sans Pro", "Helvetica Neue", sans-serif; font-weight: 900; }
+
+h1 { font-size: 32px; line-height: 48px; margin: 24px 0; }
+
+h2 { font-size: 26.08px; line-height: 48px; margin: 24px 0; }
+
+h3 { font-size: 24px; line-height: 48px; margin: 24px 0; }
+
+h4 { font-size: 18.72px; line-height: 24px; margin: 24px 0; }
+
+h5 { font-size: 16px; line-height: 24px; margin: 24px 0; }
+
+h6 { font-size: 16px; line-height: 24px; margin: 24px 0; }
+
+a { background-color: transparent; /* 1 */ -webkit-text-decoration-skip: objects; /* 2 */ /* theme-specific customizations */ color: #151515; -webkit-transition: all 350ms ease-out; transition: all 350ms ease-out; }
+a:hover, a:active, a:focus { color: #db828f; }
+
+.wp-caption-dd { font: normal 16px "Source Sans Pro", "Helvetica Neue", sans-serif; text-align: right; }
+
+/** 1. Remove the bottom border in Chrome 57- and Firefox 39-. 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title], acronym { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ -webkit-text-decoration: underline dotted; text-decoration: underline dotted; /* 2 */ /* theme-specific customizations */ cursor: help; }
+
+/** Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
+b, strong { font-weight: inherit; }
+
+/** Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong { font-weight: bolder; }
+
+code, kbd, samp, tt { /* theme-specific customizations */ background-color: #151515; border-radius: 2px; color: #f9f9f9; padding: 2px; }
+
+/** Add the correct font style in Android 4.3-. */
+dfn { font-style: italic; }
+
+ins, var { background-color: rgba(219, 130, 143, 0.25); text-decoration: none; }
+
+var { font: normal 16px "Inconsolata", "Courier New", monospace; }
+
+/** Add the correct background and color in IE 9-. */
+mark { background-color: #ff0; color: #000; }
+
+/** Add the correct font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }

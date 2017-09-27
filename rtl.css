@@ -1,0 +1,64 @@
+/*
+Theme Name: Fraise
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+body { direction: rtl; unicode-bidi: embed; }
+
+blockquote { margin: 24px 0; padding-right: 24px; border-left: none; border-right: 2px solid #151515; }
+
+ol, ul { margin: 24px 0; padding: 0 12px 0 0; }
+@media screen and (min-width: 800px) { ol, ul { padding: 0; } }
+ol ol, ol ul, ul ol, ul ul { margin: 0; padding-right: 24px; }
+
+.archive-header { padding-right: 24px; border-left: none; border-right: 2px solid #db828f; }
+
+.comments-area { padding: 24px 0; }
+@media screen and (min-width: 800px) { .comments-area .children { margin-right: 48px; } }
+
+.comment-header { margin-bottom: 24px; }
+.comment-header .avatar { margin-left: 12px; }
+
+.site { overflow: hidden; }
+.menu-active .site { -webkit-transform: translateX(75%); transform: translateX(75%); }
+@media screen and (min-width: 800px) { .menu-active .site { -webkit-transform: translateX(45%); transform: translateX(45%); } }
+
+.entry-header { padding: 24px; background-color: #f4f4f4; }
+.entry-header .avatar { margin: 0 0 12px 12px; border-radius: 50%; float: right; }
+@media screen and (min-width: 1100px) { .entry-header { background-color: #f9f9f9; } }
+
+.entry-content { /* fix for overflowing content when flex is used */ min-width: 0; }
+.entry-content:after { clear: both; display: table; content: ''; }
+@media screen and (min-width: 1100px) { .entry-content { padding-right: 48px; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; } }
+
+.featured { background-size: cover; background-position: center center; }
+.featured .entry-header { right: 24px; width: 50%; }
+
+.site-footer { text-align: left; }
+
+.site-branding { text-align: center; }
+.has-slider .site-branding { text-align: right; }
+
+.wp-caption-text { text-align: left; }
+
+.menu-panel { left: 100%; text-align: left; z-index: 100; }
+.menu-active .menu-panel { background-color: rgba(21, 21, 21, 0.75); border-right: 1px solid rgba(21, 21, 21, 0.8); display: block; left: 0; right: auto; }
+.menu-active .menu-panel ul { display: block; }
+
+.panel-toggle { left: 0; right: auto; z-index: 150; }
+.menu-active .panel-toggle { left: 75%; right: auto; }
+@media screen and (min-width: 800px) { .menu-active .panel-toggle { left: 45%; } }
+
+.nav-previous { border-bottom: 1px solid #db828f; }
+@media screen and (min-width: 800px) { .nav-previous { border-bottom: none; border-left: 1px solid #db828f; border-right: none; text-align: left; } }
+
+.nav-next { border-top: 1px solid #db828f; }
+@media screen and (min-width: 800px) { .nav-next { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; border-top: none; border-left: none; border-right: 1px solid #db828f; margin-right: auto; } }
+
+.widget_calendar { position: static; }
+.widget_calendar #next { text-align: left; }
